@@ -43,6 +43,7 @@ dependencies:
   syncfusion_flutter_maps: ^25.1.35
   location: ^5.0.0-dev.8
   smooth_page_indicator: ^1.1.0
+  firebase_core: ^2.27.1
 
 dev_dependencies:
   flutter_launcher_icons: ^0.13.1

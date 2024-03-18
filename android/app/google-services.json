@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "705235437995",
+    "project_id": "vitalise02",
+    "storage_bucket": "vitalise02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705235437995:android:f2cd141cf78c5488f52aee",
+        "android_client_info": {
+          "package_name": "com.example.vitalize"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN3Je0yg1XRWHn_QR384GA6Cx-wpL4p5g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
