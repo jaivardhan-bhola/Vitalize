@@ -1,0 +1,54 @@
+{
+    "hospitals": [
+        {
+            "name": "HCG Cancer Center",
+            "star": 4,
+            "speciality": "Radiology, Oncology, Hematology",
+            "working_hours": "24/7",
+            "location": "Kalamna, Nagpur",
+            "beds": 50,
+            "phone": "063588 88822",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipNsqIxwLj739Na3J6m9USk5CbD02cEe9V_W5TS8=s680-w680-h510"
+        },
+        {
+            "name": "Kims - Kingsway Hospitals",
+            "star": 5,
+            "speciality": "Multi Speciality",
+            "working_hours": "24/7",
+            "location": "Mohan Nagar, Nagpur",
+            "beds": 80,
+            "phone": "0712 678 9100",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipOUn6SCxanWelDqZO-6E475MBTuixCMzj4vJbV3=s680-w680-h510"
+        },
+        {
+            "name": "Alexis Multispeciality Hospital",
+            "star": 4,
+            "speciality": "Multi Speciality",
+            "working_hours": "24/7",
+            "location": "Mankapur, Nagpur",
+            "beds": 90,
+            "phone": "0712 712 0000",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipPSxN1dNJ1pV690PUZLz1a7YNpZnpgfUa1TDE4=s680-w680-h510"
+        },
+        {
+            "name": "Jiva Ayurveda Clinic",
+            "star": 3,
+            "speciality": "Ayurveda, Dermatology",
+            "working_hours": "10am - 7pm",
+            "location": "Lokmat Nagar, Nagpur",
+            "beds": 5,
+            "phone": "093114 01961",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipPcLXIGSGiCjkcfAfJcNfj2ZOWAzGLwM9A7R3bT=s680-w680-h510"
+        },
+        {
+            "name": "Venkatesh Retina and Eye Care",
+            "star": 5,
+            "speciality": "Ophthalmology",
+            "working_hours": "9am - 4pm, 7pm-9pm",
+            "location": "Wardhaman Nagar, Nagpur",
+            "beds": 2,
+            "phone": "063588 88822",
+            "image": "https://lh3.googleusercontent.com/p/AF1QipMWOd_EAUIl9QaIKcSPlBSigXJU-sF_I6htZx7H=s680-w680-h510"
+        }
+    ]
+}

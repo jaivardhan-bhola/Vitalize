@@ -1,0 +1,54 @@
+{
+    "doctors": [
+        {
+            "name": "Dr. Yash Duragkar",
+            "experience": "6 Years",
+            "type": "MBBS - General Physician",
+            "working_hours": "7am - 11:30pm",
+            "location": "Mhalginagar, Nagpur",
+            "fees": 200,
+            "phone": "063588 88822",
+            "image": "https://imagesx.practo.com/providers/dr-yash-duragkar-general-physician-nagpur-4d29ce8b-ec45-41d1-b843-d9bdc4f590fb.jpg?i_type=t_100x100-4x"
+        },
+        {
+            "name": "Dr. Nivedita Kher Phadnaik",
+            "experience": "11 Years",
+            "type": "MBBS, DNB - Cardiology",
+            "working_hours": "9am - 9pm",
+            "location": "Dharampeth, Nagpur",
+            "fees": 800,
+            "phone": "063588 88822",
+            "image": "https://assets.lybrate.com/img/documents/doctor/dp/2ac1138d679335bbf6850cb7013415fd/Cardiology-NiveditaKher-Nagpur-625cdb.jpg"
+        },
+        {
+            "name": "Dr. Shashwat Magarkar",
+            "experience": "15 Years",
+            "type": "MDS - Oral & Maxillofacial Surgery",
+            "working_hours": "10am - 8pm",
+            "location": "Dhantoli, Nagpur",
+            "fees": 500,
+            "phone": "063588 88822",
+            "image": "https://assets.lybrate.com/img/documents/doctor/dp/ab7dec7587a69d7fff93e7f97fc8260c/Dentistry-ShashwatMagarkar-Nagpur-5e0a3f"
+        },
+        {
+            "name": "Dr. Sangita Renge",
+            "experience": "23 Years",
+            "type": "BHMS, MD - Homeopathy",
+            "working_hours": "11am - 7:30pm",
+            "location": "Ramdaspeth, Nagpur",
+            "fees": 500,
+            "phone": "063588 88822",
+            "image": "https://images.jdmagicbox.com/comp/nagpur/l2/0712px712.x712.170217171939.x8l2/catalogue/dr-sangita-renge-dr-renge-s-total-clinic-ramdaspeth-nagpur-cosmetologist-doctors-3p95zwf.jpg"
+        },
+        {
+            "name": "Dr. Romil Rathi",
+            "experience": "8 Years",
+            "type": "MBBS, MS - Orthopaedics",
+            "working_hours": "11am - 7pm",
+            "location": "Ramdaspeth, Nagpur",
+            "fees": 600,
+            "phone": "063588 88822",
+            "image": "https://d1ea147o02h74h.cloudfront.net/dr.-romil.png"
+        }
+    ]
+}

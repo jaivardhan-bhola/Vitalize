@@ -1,0 +1,194 @@
+{
+    "bloodbanks": [
+        {
+            "group": "A+",
+            "image": "assets/icons/a+.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "A-",
+            "image": "assets/icons/a-.png",
+            "locations": [
+                {
+                   "name" : "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "B+",
+            "image": "assets/icons/b+.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "B-",
+            "image": "assets/icons/b-.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "AB+",
+            "image": "assets/icons/ab+.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "AB-",
+            "image": "assets/icons/ab-.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "O+",
+            "image": "assets/icons/o+.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        },
+        {
+            "group": "O-",
+            "image": "assets/icons/o-.png",
+            "locations": [
+                {
+                    "name": "HCG Cancer Center",
+                    "qty": "10L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Apollo Hospital",
+                    "qty": "5L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Kims - Kingsway Hospitals",
+                    "qty": "7L",
+                    "contact": "063588 88822"
+                },
+                {
+                    "name": "Alexis Multispeciality Hospital",
+                    "qty": "3L",
+                    "contact": "063588 88822"
+                }
+            ]
+        }
+    
+]
+}
+
