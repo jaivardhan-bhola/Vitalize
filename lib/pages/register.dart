@@ -3,7 +3,8 @@ import 'package:hive_flutter/hive_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:vitalize/pages/home.dart';
 import 'package:vitalize/pages/login.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -11,6 +12,9 @@ class Register extends StatefulWidget {
 }
 
 class _RegisterState extends State<Register> {
+  final FirebaseAuth _auth = FirebaseAuth.instance;
+  final FirebaseFirestore _firestore = FirebaseFirestore.instance;
+
   final _emailController = TextEditingController();
   final _passwordController = TextEditingController();
   final _phoneController = TextEditingController();
@@ -127,7 +131,7 @@ class _RegisterState extends State<Register> {
                 ),
               ),
               SizedBox(height: 50),
-              ElevatedButton(onPressed: _Register, child: Text('Register'), style: ElevatedButton.styleFrom(backgroundColor: Color(0xffFF746E), foregroundColor: Colors.white, minimumSize: Size(MediaQuery.of(context).size.width*0.9, MediaQuery.of(context).size.height*0.05), textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))), ),
+              ElevatedButton(onPressed: _register, child: Text('Register'), style: ElevatedButton.styleFrom(backgroundColor: Color(0xffFF746E), foregroundColor: Colors.white, minimumSize: Size(MediaQuery.of(context).size.width*0.9, MediaQuery.of(context).size.height*0.05), textStyle: TextStyle(fontSize: 20, fontWeight: FontWeight.bold), shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10))), ),
               SizedBox(height: 10),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
@@ -159,15 +163,60 @@ class _RegisterState extends State<Register> {
       );
   }
 
-  void _Register() async {
-    if(_emailController.text.isNotEmpty && _passwordController.text.isNotEmpty && _phoneController.text.isNotEmpty){
-      userBox.put('email', _emailController.text);
-      userBox.put('password', _passwordController.text);
-      userBox.put('phone', _phoneController.text);
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
-  }
-  else {
-    showDialog(context: context, builder: (context) => AlertDialog(title: Text('Error'), content: Text('Please fill all the fields'), actions: [TextButton(onPressed: (){Navigator.pop(context);}, child: Text('OK'))],));
-  }
+  void _register() async {
+    try {
+      if (_emailController.text.isNotEmpty &&
+          _passwordController.text.isNotEmpty &&
+          _phoneController.text.isNotEmpty) {
+          userBox.put('email', _emailController.text);
+          userBox.put('password', _passwordController.text);
+          userBox.put('phone', _phoneController.text);
+        final UserCredential userCredential =
+            await _auth.createUserWithEmailAndPassword(
+          email: _emailController.text,
+          password: _passwordController.text,
+        );
+        Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => Home()));
+        await _firestore
+            .collection('vitalise02')
+            .doc(userCredential.user!.uid)
+            .set({
+          'email': _emailController.text,
+          'phone': _phoneController.text,
+        });
+      } else {
+        showDialog(
+          context: context,
+          builder: (context) => AlertDialog(
+            title: Text('Error'),
+            content: Text('Please fill all the fields'),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: Text('OK'),
+              ),
+            ],
+          ),
+        );
+      }
+    } catch (e) {
+      showDialog(
+        context: context,
+        builder: (context) => AlertDialog(
+          title: Text('Error'),
+          content: Text('Error registering user: $e'),
+          actions: [
+            TextButton(
+              onPressed: () {
+                Navigator.pop(context);
+              },
+              child: Text('OK'),
+            ),
+          ],
+        ),
+      );
+    }
   }
 }

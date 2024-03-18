@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:vitalize/pages/home.dart';
 import 'package:vitalize/pages/register.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 class Login extends StatefulWidget {
   @override
@@ -130,19 +132,29 @@ class _LoginState extends State<Login> {
       ),
       );
   }
-
-  void _login() async {
-    var email = _emailController.text;
-    var password = _passwordController.text;
-    var user = userBox.get(email);
-    if (user != null) {
-      if (user['password'] == password) {
-
+Future<void> _login() async {
+    try {
+      var email = _emailController.text;
+      var password = _passwordController.text;
+      UserCredential userCredential =
+          await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: email,
+        password: password,
+          );
+      userBox.put('email', email);
+      Navigator.pushReplacement(
+          context, MaterialPageRoute(builder: (context) => Home()));
+    } on FirebaseAuthException catch (e) {
+      if (e.code == 'user-not-found' || e.code == 'wrong-password') {
+        ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(content: Text('Incorrect email or password')));
       } else {
-        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('Incorrect password')));
+        ScaffoldMessenger.of(context)
+            .showSnackBar(SnackBar(content: Text('Error: ${e.message}')));
       }
-    } else {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('User not found')));
+    } catch (e) {
+      // Handle other errors
+      print(e);
+    }
   }
-}
 }

@@ -27,7 +27,7 @@ class _OnboardingState extends State<Onboarding> {
           controller: _controller,
           children: [
             Container(
-              color: Color(0xffFF746E),
+              color: Color(0xfff05253),
               child: Column(
                 children: [
                   SizedBox(height: 100),
@@ -155,7 +155,7 @@ class _OnboardingState extends State<Onboarding> {
                       fontWeight: FontWeight.bold,
                     ),
                   ),textAlign: TextAlign.center,),
-                  Image.asset('assets/mockups/Onboarding7.png', height: MediaQuery.of(context).size.height * 0.6, width: MediaQuery.of(context).size.width * 0.7,),
+                  Image.asset('assets/mockups/Onboarding8.png', height: MediaQuery.of(context).size.height * 0.6, width: MediaQuery.of(context).size.width * 0.7,),
                 ],
               ),
             )

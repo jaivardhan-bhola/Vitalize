@@ -61,7 +61,7 @@ class _HomeState extends State<Home> {
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               radius: 45,
-                              child: Text("A", style: GoogleFonts.montserrat(
+                              child: Text(hiveBox.get('email')[0].toUpperCase(), style: GoogleFonts.montserrat(
                                 textStyle: TextStyle(
                                   color: Colors.black,
                                   fontSize: 30,
@@ -73,7 +73,7 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                     SizedBox(height: 10),
-                    Text("Abc", style: GoogleFonts.montserrat(
+                    Text(hiveBox.get('email').toString().split('@')[0], style: GoogleFonts.montserrat(
                       textStyle: TextStyle(
                         color: Colors.black,
                         fontSize: 20,
@@ -148,7 +148,7 @@ class _HomeState extends State<Home> {
                   },
                   icon: CircleAvatar(
                     backgroundColor: Colors.white,
-                    child: Text('A',
+                    child: Text(hiveBox.get('email')[0].toUpperCase(),
                       style: GoogleFonts.inter(
                         textStyle: TextStyle(
                           color: Color(0xffFF746E),
