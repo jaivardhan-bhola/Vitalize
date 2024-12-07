@@ -41,7 +41,7 @@ class _AmbulanceState extends State<Ambulance> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(crossAxisAlignment: CrossAxisAlignment.start,children: [
-        SizedBox(height: 20),
+        SizedBox(height: 18),
         Padding(
           padding: const EdgeInsets.only(left: 8.0),
           child: Text('Book An Ambulance', style: GoogleFonts.inter(
@@ -52,7 +52,7 @@ class _AmbulanceState extends State<Ambulance> {
             ),
           ),),
         ),
-        SizedBox(height: 20),
+        SizedBox(height: 18),
         Padding(
           padding: const EdgeInsets.all(8.0),
           child: Container(
